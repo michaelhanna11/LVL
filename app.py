@@ -506,8 +506,6 @@ def main():
                 href = f'<a href="data:application/pdf;base64,{b64}" download="Load_Combination_Report_{project_number}.pdf" style="display: inline-block; padding: 0.5em 1em; background-color: #f63366; color: white; border-radius: 0.5em; text-decoration: none;">Download PDF Report</a>'
                 st.markdown(href, unsafe_allow_html=True)
 
-if __name__ == "__main__":
-    
     st.header("Slab Formwork Gridwork Design (LVL Beams)")
 
     with st.expander("Design Gridwork with LVL Beams"):
@@ -543,5 +541,5 @@ if __name__ == "__main__":
         st.markdown(f"**Load on Each Frame:** {P_frame:.2f} kN")
 
 
-
+if __name__ == "__main__":
     main()
